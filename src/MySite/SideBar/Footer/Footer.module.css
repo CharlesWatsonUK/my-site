@@ -1,0 +1,9 @@
+.Footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}

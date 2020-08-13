@@ -1,0 +1,9 @@
+This site uses Google Fonts.
+
+Google Fonts are distributed under the Open Font License (OFL) https://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
+
+The contents of all files in this directory (other than of this file) have been downloaded from the following:
+
+- font.css -> https://fonts.googleapis.com/css?family=Titillium+Web
+- latin_ext.woff2 -> https://fonts.gstatic.com/s/titilliumweb/v8/NaPecZTIAOhVxoMyOr9n_E7fdM3mDaZRbryhsA.woff2
+- latin.woff2 -> https://fonts.gstatic.com/s/titilliumweb/v8/NaPecZTIAOhVxoMyOr9n_E7fdMPmDaZRbrw.woff2

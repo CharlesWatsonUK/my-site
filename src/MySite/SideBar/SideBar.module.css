@@ -1,0 +1,41 @@
+.SideBar {
+    left: 0;
+    height: 100%;
+    position: fixed;
+    display: block;
+    background-color: rgb(27, 27, 27);
+    color: rgb(255, 255, 255);
+}
+
+.ProfileImage {
+    width: 90%;
+    margin: auto;
+}
+
+.Links {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 3em;
+}
+
+.Menu {
+    font-size: 1.2em;
+    width: 50%;
+    padding-top: 20px;
+
+}
+
+.SideBarItem {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.Footer {
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 10px;
+    width: 18%;
+}
+
+
+
