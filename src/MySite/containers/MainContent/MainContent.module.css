@@ -1,0 +1,9 @@
+.MainContent {
+    background-color: var(--WhiteColor);
+}
+
+hr {
+    width: 80%;
+    margin: auto;
+}
+

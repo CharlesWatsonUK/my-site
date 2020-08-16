@@ -1,0 +1,44 @@
+{
+    "employment": [
+        {
+            "employer": "Booking.com",
+            "title": "Graduate Software Engineer",
+            "startDate": "September 2019",
+            "endDate": "Present",
+            "skills": [
+                "Java",
+                "Spring",
+                "Docker",
+                "Jira",
+                "Spock",
+                "Groovy"
+            ]
+
+        },
+        {
+            "employer": "Nissan Motor Corporation",
+            "title": "Student Software Engineer",
+            "startDate": "June 2017",
+            "endDate": "July 2018",
+            "skills": [
+                "Java",
+                "Spring",
+                "JavaScript",
+                "Python",
+                "JSP",
+                "XSLT",
+                "Jira"
+            ]
+
+        }
+    ],
+    "education": [
+        {
+            "institution": "Loughborough University",
+            "degree": "Computer Science (BSc Hons)",
+            "grade": "1st Class Honours",
+            "startDate": "September 2015",
+            "endDate": "June 2019" 
+        }
+    ] 
+}

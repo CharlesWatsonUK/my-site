@@ -1,5 +1,11 @@
 @import url('./assets/google_fonts/fonts.css');
 
+:root {
+  --BlackColor: rgb(27, 27, 27);
+  --WhiteColor: rgb(255, 255, 255);
+  --LightBlueColor: rgb(183, 194, 219);
+}
+
 h1, h2, h3, p {
   padding: 0;
   margin: 0;
@@ -8,6 +14,10 @@ h1, h2, h3, p {
 button {
   all: unset;
   cursor: pointer;
+}
+
+html {
+  width: 100%;
 }
 
 body {

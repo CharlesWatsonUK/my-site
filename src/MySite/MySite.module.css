@@ -1,11 +1,70 @@
-.MySite {
-    
+.Header {
+    height: 50px;
+    display: none;
+}
+
+.SideDrawer {
+    position: fixed;
+    left: 0;
+    top: 50px;
+    bottom: 0;
+    color: var(--WhiteColor);
 }
 
 .SideBar {
     width: 18%;
+    display: block;
 }
 
 .MainContent {
     margin-left: 18%;
+}
+
+.SideDrawer {
+    display: none;
+}
+
+@media only screen and (max-width: 1400px) {
+    .Header {
+        display: block;
+    }
+    
+    .SideBar {
+        display: none;
+    }
+
+    .MainContent {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    .SideDrawer {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1900px) and (max-width: 2100px) {
+    .SideBar {
+        width: 15%;
+    }
+
+    .MainContent {
+        margin-left: 15%;
+    }
+}
+
+@media only screen and (min-width: 2101px) {
+    .SideBar {
+        width: 12%;
+    }
+
+    .MainContent {
+        margin-left: 12%;
+    }
+}
+
+@media only screen and (min-width: 1401px) {
+    button:hover {
+        color: rgb(5, 183, 253);
+    }
 }

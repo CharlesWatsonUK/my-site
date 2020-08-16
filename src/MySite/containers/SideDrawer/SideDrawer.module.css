@@ -1,0 +1,45 @@
+.SideDrawer {
+    background-color: rgb(46, 46, 46);
+    transition: all 0.5s ease-in;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.Open {
+    width: 30%;
+}
+
+.Closed {
+    width: 0;
+}
+
+.Links {
+    font-size: 2em;;
+}
+
+.Menu {
+    margin-top: 20px;
+    font-size: 1.2em;;
+}
+
+.ProfileImage {
+    width: 60%;
+    margin: 10px 20% 0 20%;
+}
+
+.Footer {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 450px) {
+    .Open {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 600px) {
+    .Open {
+        width: 50%;
+    }
+}
