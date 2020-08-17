@@ -1,24 +1,97 @@
+.AboutMe {
+    background-color: var(--GrayColor);
+    color: var(--WhiteColor);
+}
+
+.AboutMeContent {
+    display: flex;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin: 10px 30% 10px 30%;
+}
+
 .ProfileImage {
     display: none;
-    width: 20%;
-    margin:auto;
-    border-radius: 50%;
+}
+
+.Links {
+    display: none;
+}
+
+.ShortBio {
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
 @media only screen and (max-width: 1400px) {
     .ProfileImage {
         display: block;
+        margin-right: 5px;
+    }
+
+    .Bio {
+        margin-left: 5px;
+    }
+
+    .Links {
+        display: flex;
+        justify-content: space-evenly;
+        width: 30%;
+        margin: auto;
+        font-size: 2em;
+    }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1400px) {
+    .AboutMeContent {
+        display: flex;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .ProfileImage {
+        width: 30%;
+    }
+
+    .Bio {
+        width: 70%;
     }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 800px) {
+    .AboutMeContent {
+        display: flex;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
     .ProfileImage {
         width: 30%;
+    }
+
+    .Bio {
+        width: 70%;
     }
 }
 
 @media only screen and (max-width: 600px) {
+    .AboutMeContent {
+        display: block;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
     .ProfileImage {
         width: 40%;
+        margin: auto;
+    }
+
+    .Bio {
+        width: 90%;
+        margin: auto;
+    }
+
+    .Links {
+        width: 60%;
     }
 }

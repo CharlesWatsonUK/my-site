@@ -16,7 +16,7 @@ const SideDrawer = (props) => {
     <div className={[Styles.SideDrawer, props.className, openCloseClass].join(' ')}>
      <ProfileImage className={Styles.ProfileImage} circle={true}/>
      <Links className={Styles.Links}/>
-     <Menu className={Styles.Menu}/>
+     <Menu className={Styles.Menu} sectionSelected={props.sectionSelected}/>
      <Footer className={Styles.Footer}/>
     </div>
   );

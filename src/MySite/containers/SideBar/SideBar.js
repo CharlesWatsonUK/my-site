@@ -13,7 +13,7 @@ const SideBar = (props) => {
       <ProfileImage className={Styles.ProfileImage} circle={true}/>
       <Title/>
       <Links className={Styles.Links}/>
-      <Menu className={Styles.Menu}/>
+      <Menu className={Styles.Menu} sectionSelected={props.sectionSelected}/>
       <Footer className={Styles.Footer}/>
 
     </div>

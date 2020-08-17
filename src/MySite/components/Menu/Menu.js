@@ -5,11 +5,11 @@ const Menu = (props) => {
   return (
     <div className={[Styles.Menu, props.className].join(' ')}>
         <ul>
-            <li><button>About Me</button></li>
-            <li><button>Education</button></li>
-            <li><button>Employment</button></li>
-            <li><button>Skills</button></li>
-            <li><button>Interests</button></li>
+            <li><button onClick={() => props.sectionSelected("aboutMe")}>About Me</button></li>
+            <li><button onClick={() => props.sectionSelected("education")}>Education</button></li>
+            <li><button onClick={() => props.sectionSelected("employment")}>Employment</button></li>
+            <li><button onClick={() => props.sectionSelected("skills")}>Skills</button></li>
+            <li><button onClick={() => props.sectionSelected("interests")}>Interests</button></li>
         </ul>
     </div>
   );

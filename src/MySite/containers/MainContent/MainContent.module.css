@@ -1,9 +1,15 @@
 .MainContent {
     background-color: var(--WhiteColor);
+    overflow: scroll;
 }
 
 hr {
     width: 80%;
     margin: auto;
+}
+
+.Footer {
+    height: 50px;
+    width: 100%;
 }
 

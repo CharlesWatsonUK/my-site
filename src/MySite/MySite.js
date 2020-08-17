@@ -6,8 +6,9 @@ import MainContent from './containers/MainContent/MainContent';
 import SideDrawer from './containers/SideDrawer/SideDrawer';
 
 const MySite = () => {
-  const [data, setData] = useState({employment: [], education: []})
+  const [data, setData] = useState({aboutMe: {}, employment: [], education: []})
   const [isSideDrawerOpen, setIsSideDrawerOpen] = useState(false)
+  const [currentSection, setCurrentSection] = useState("")
 
   async function fetchData() {
     const res = await fetch("./data.json")
@@ -22,10 +23,27 @@ const MySite = () => {
 
   return (
     <div className={Styles.MySite}>
-      <SideDrawer className={Styles.SideDrawer} isOpen={isSideDrawerOpen}/>
-      <Header className={Styles.Header} openCloseSideDrawer={() => setIsSideDrawerOpen(!isSideDrawerOpen)}/>
-      <SideBar className={Styles.SideBar}/>
-      <MainContent className={Styles.MainContent} data={data}/>
+      <SideDrawer className={Styles.SideDrawer} isOpen={isSideDrawerOpen} 
+      sectionSelected={section => {
+          setCurrentSection(section)
+          setIsSideDrawerOpen(false)
+      }}/>
+      
+      <Header className={Styles.Header} 
+      openCloseSideDrawer={() => {
+        setIsSideDrawerOpen(!isSideDrawerOpen)
+        setCurrentSection("")
+      }}/>
+      
+      <SideBar className={Styles.SideBar} 
+      sectionSelected={section => {
+        setCurrentSection(" ")
+        setCurrentSection(section)}}/>
+      
+      <MainContent className={Styles.MainContent} data={data} currentSection={currentSection} scroll={() => {
+        setCurrentSection("")
+        console.log('scrolling')
+      }}/>
     </div>
   );
 }

@@ -18,6 +18,7 @@
 
 .MainContent {
     margin-left: 18%;
+    height: 100vh;
 }
 
 .SideDrawer {
@@ -36,6 +37,7 @@
     .MainContent {
         margin-left: 0;
         margin-top: 50px;
+        padding-bottom: 50px;
     }
 
     .SideDrawer {
