@@ -49,19 +49,21 @@
     ],
     "interests": [
         {
-            "iconClass": "",
             "interest": "Guitar",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+            "imageUrl": "./images/guitar.png"
         },
         {
             "iconClass": "fa-golf-ball",
             "interest": "Golf",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+            "imageUrl": "./images/golf.png"
         },
         {
             "iconClass": "",
-            "interest": "Walking/ Hiking",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+            "interest": "Hiking",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+            "imageUrl": "./images/hiking.png"
         }
     ] 
 }

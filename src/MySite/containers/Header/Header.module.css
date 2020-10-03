@@ -4,6 +4,7 @@
     top: 0;
     background-color: var(--BlackColor);
     color: var(--WhiteColor);
+    z-index: 900;
 }
 
 .MenuIcon {

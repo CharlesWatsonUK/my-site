@@ -1,20 +1,24 @@
 import React, {forwardRef} from 'react';
 import Styles from './Interests.module.css';
-import ContentSection from '../../../components/ContentSection/ContentSection';
-import InterestsItem from './InterestsItem/InterestsItem';
+import Panel from '../../../components/Panel/Panel';
 
 const Interests = forwardRef((props, ref) => {
     
-    let interestsItemsJsx = props.data.map(interestsItem => 
-       <InterestsItem data={interestsItem} key={interestsItem.interesta}/>)
+    let interestsItemsJsx = props.data.map(interestsItem => {
+      let panelData = {
+        titleBig: interestsItem.interest,
+        imageUrl: interestsItem.imageUrl
+      }
+      return <Panel data={panelData} small={true}/>
+    })
 
     return (
-    <ContentSection ref={ref} className={Styles.Interests}>  
-      <h2><i className="fa fa-briefcase"></i> Interests</h2>
-      <div className={Styles.InterestsContainer}>
+    <div ref={ref}>
+      <h2><i className="fa fa-smile"></i> Interests </h2>
+      <div className={Styles.Interests}>
         {interestsItemsJsx}
       </div>
-    </ContentSection>
+    </div>
   );
 })
 

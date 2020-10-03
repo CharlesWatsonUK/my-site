@@ -5,9 +5,6 @@ import Employment from './Employment/Employment';
 import Education from './Education/Education';
 import Interests from './Interests/Interests';
 
-import Employment2 from './Employment2/Employment2';
-import Education2 from './Education2/Education2';
-
 const MainContent = (props) => {
   
   const scrollSettings = {behavior: "smooth", block: "nearest", inline: "start"}
@@ -46,8 +43,17 @@ const MainContent = (props) => {
       <Education ref={educationRef} data={props.data.education} />
       <Interests ref={interestsRef} data={props.data.interests} /> */}
 
-      <Employment2 data={props.data.employment}/>
-      <Education2 data={props.data.education}/>
+      <Employment ref={employmentRef} data={props.data.employment}/>
+      <Education ref={educationRef} data={props.data.education}/>
+      <Interests ref={interestsRef} data={props.data.interests}/>
+
+      <p>
+        lfnjkdsngn
+        fgnadsinglkn
+        wdinldsakn
+        ddivnlkdsvlk
+        dvondsvklml;
+      </p>
 
       
 

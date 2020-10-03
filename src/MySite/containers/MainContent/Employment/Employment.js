@@ -1,18 +1,23 @@
 import React, {forwardRef} from 'react';
-import Styles from './Employment.module.css';
-import ContentSection from '../../../components/ContentSection/ContentSection';
-import EmploymentItem from './EmploymentItem/EmploymentItem';
+import Panel from '../../../components/Panel/Panel';
 
 const Employment = forwardRef((props, ref) => {
     
-    let employmentItemsJsx = props.data.map(employmentItem => 
-       <EmploymentItem data={employmentItem} key={employmentItem.employer}/>)
-
+  const employmentItems = props.data.map(employmentItem => {
+    let panelData = {
+      imageUrl: employmentItem.imageUrl,
+      titleBig: employmentItem.employer,
+      titleSmall: employmentItem.title
+    }
+    return <Panel data={panelData}/>
+  })
+  
+  
     return (
-    <ContentSection ref={ref} className={Styles.Employment}>  
+    <div ref={ref}>
       <h2><i className="fa fa-briefcase"></i> Employment </h2>
-      {employmentItemsJsx}
-    </ContentSection>
+      {employmentItems}
+    </div>
   );
 })
 
