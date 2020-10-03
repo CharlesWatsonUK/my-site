@@ -3,6 +3,10 @@ import Styles from './MainContent.module.css';
 import AboutMe from './AboutMe/AboutMe';
 import Employment from './Employment/Employment';
 import Education from './Education/Education';
+import Interests from './Interests/Interests';
+
+import Employment2 from './Employment2/Employment2';
+import Education2 from './Education2/Education2';
 
 const MainContent = (props) => {
   
@@ -38,94 +42,19 @@ const MainContent = (props) => {
   return (
     <div className={[Styles.MainContent, props.className].join(' ')} onScroll={props.scroll} ref={aboutMeRef}>
       <AboutMe data={props.data.aboutMe}/>
-      <Employment ref={employmentRef} data={props.data.employment} />
+      {/* <Employment ref={employmentRef} data={props.data.employment} />
       <Education ref={educationRef} data={props.data.education} />
-      <p>
-        fsdafsadgdsgsadgsdgasgasgag <br/>
-        sadgsdagsdagasdgsagsadgg<br/>
-        fsdafsadgdsgsadgsdgasgasgag<br/>
-        sadgsdagsdagasdgsagsadgg<br/>
-        fsdafsadgdsgsadgsdgasgasgag<br/>
-        sadgsdagsdagasdgsagsadgg<br/>
-        fsdafsadgdsgsadgsdgasgasgag<br/>
-        sadgsdagsdagasdgsagsadgg<br/>
-        fsdafsadgdsgsadgsdgasgasgag<br/>
-        sadgsdagsdagasdgsagsadgg<br/>
-        12345<br/>  
-      </p>
+      <Interests ref={interestsRef} data={props.data.interests} /> */}
 
-      <p>
-        fsdafsadgdsgsadgsdgasgasgag <br/>
-        sadgsdagsdagasdgsagsadgg<br/>
-        fsdafsadgdsgsadgsdgasgasgag<br/>
-        sadgsdagsdagasdgsagsadgg<br/>
-        fsdafsadgdsgsadgsdgasgasgag<br/>
-        sadgsdagsdagasdgsagsadgg<br/>
-        fsdafsadgdsgsadgsdgasgasgag<br/>
-        sadgsdagsdagasdgsagsadgg<br/>
-        fsdafsadgdsgsadgsdgasgasgag<br/>
-        sadgsdagsdagasdgsagsadgg<br/>
-        12345<br/>  
-      </p>
+      <Employment2 data={props.data.employment}/>
+      <Education2 data={props.data.education}/>
 
-      <p>
-        fsdafsadgdsgsadgsdgasgasgag <br/>
-        sadgsdagsdagasdgsagsadgg<br/>
-        fsdafsadgdsgsadgsdgasgasgag<br/>
-        sadgsdagsdagasdgsagsadgg<br/>
-        fsdafsadgdsgsadgsdgasgasgag<br/>
-        sadgsdagsdagasdgsagsadgg<br/>
-        fsdafsadgdsgsadgsdgasgasgag<br/>
-        sadgsdagsdagasdgsagsadgg<br/>
-        fsdafsadgdsgsadgsdgasgasgag<br/>
-        sadgsdagsdagasdgsagsadgg<br/>
-        12345<br/>  
-      </p>
+      
 
-      <p>
-        fsdafsadgdsgsadgsdgasgasgag <br/>
-        sadgsdagsdagasdgsagsadgg<br/>
-        fsdafsadgdsgsadgsdgasgasgag<br/>
-        sadgsdagsdagasdgsagsadgg<br/>
-        fsdafsadgdsgsadgsdgasgasgag<br/>
-        sadgsdagsdagasdgsagsadgg<br/>
-        fsdafsadgdsgsadgsdgasgasgag<br/>
-        sadgsdagsdagasdgsagsadgg<br/>
-        fsdafsadgdsgsadgsdgasgasgag<br/>
-        sadgsdagsdagasdgsagsadgg<br/>
-        12345<br/>  
-      </p>
-
-      <p>
-        fsdafsadgdsgsadgsdgasgasgag <br/>
-        sadgsdagsdagasdgsagsadgg<br/>
-        fsdafsadgdsgsadgsdgasgasgag<br/>
-        sadgsdagsdagasdgsagsadgg<br/>
-        fsdafsadgdsgsadgsdgasgasgag<br/>
-        sadgsdagsdagasdgsagsadgg<br/>
-        fsdafsadgdsgsadgsdgasgasgag<br/>
-        sadgsdagsdagasdgsagsadgg<br/>
-        fsdafsadgdsgsadgsdgasgasgag<br/>
-        sadgsdagsdagasdgsagsadgg<br/>
-        12345<br/>  
-      </p>
-
-      <p>
-        fsdafsadgdsgsadgsdgasgasgag <br/>
-        sadgsdagsdagasdgsagsadgg<br/>
-        fsdafsadgdsgsadgsdgasgasgag<br/>
-        sadgsdagsdagasdgsagsadgg<br/>
-        fsdafsadgdsgsadgsdgasgasgag<br/>
-        sadgsdagsdagasdgsagsadgg<br/>
-        fsdafsadgdsgsadgsdgasgasgag<br/>
-        sadgsdagsdagasdgsagsadgg<br/>
-        fsdafsadgdsgsadgsdgasgasgag<br/>
-        sadgsdagsdagasdgsagsadgg<br/>
-        12345<br/>  
-      </p>
-      <div ref={skillsRef}>Skills</div>
+      
+      {/* <div ref={skillsRef}>Skills</div>
       <div ref={interestsRef}>Interests</div>
-      <div className={Styles.Footer}></div>
+      <div className={Styles.Footer}></div> */}
     </div>
   );
 }

@@ -1,0 +1,10 @@
+.Interests {
+    background-color: var(--GreenColor);
+}
+
+.InterestsContainer {
+    padding: 0 10px 0 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}

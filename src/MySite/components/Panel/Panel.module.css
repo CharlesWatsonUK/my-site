@@ -1,0 +1,46 @@
+.Panel {
+    height: 400px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.Image {  
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.Content {
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+    font-size: 1.2em;
+}
+
+h3 {
+    margin: 0;
+}
+
+@media only screen and (max-width: 900px) {
+    .Panel {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Panel {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .Panel {
+        height: 200px;
+    }
+    
+    .Content {
+        font-size: 1em;
+    }
+}

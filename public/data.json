@@ -16,8 +16,8 @@
                 "Jira",
                 "Spock",
                 "Groovy"
-            ]
-
+            ],
+            "imageUrl": "./images/booking.png"
         },
         {
             "employer": "Nissan Motor Corporation",
@@ -33,8 +33,8 @@
                 "JSP",
                 "XSLT",
                 "Jira"
-            ]
-
+            ],
+            "imageUrl": "./images/nissan.png"
         }
     ],
     "education": [
@@ -43,7 +43,25 @@
             "degree": "Computer Science (BSc Hons)",
             "grade": "1st Class Honours",
             "startDate": "September 2015",
-            "endDate": "June 2019" 
+            "endDate": "June 2019",
+            "imageUrl": "./images/uni.png"
+        }
+    ],
+    "interests": [
+        {
+            "iconClass": "",
+            "interest": "Guitar",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+        },
+        {
+            "iconClass": "fa-golf-ball",
+            "interest": "Golf",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+        },
+        {
+            "iconClass": "",
+            "interest": "Walking/ Hiking",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
         }
     ] 
 }
