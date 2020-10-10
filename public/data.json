@@ -47,6 +47,30 @@
             "imageUrl": "./images/uni.png"
         }
     ],
+    "skills": {
+        "levels": [
+            {
+                "title": "Proficient",
+                "subTitle": "2+ years industry experience",
+                "skills": [
+                    "Java",
+                    "Spring",
+                    "Git"
+                ]
+            },
+            {
+                "title": "Knowledgeable",
+                "subTitle": "Some industry experience and use in personal projects",
+                "skills": [
+                    "JavaScript",
+                    "React",
+                    "Angular",
+                    "Python",
+                    "SQL"
+                ]
+            }
+        ]
+    },
     "interests": [
         {
             "interest": "Guitar",

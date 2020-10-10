@@ -9,7 +9,7 @@ const Panel = forwardRef((props, ref) => {
         backgroundPosition: 'center'
     }
 
-    const splitNewLines = (text) => text.split('\n').map(t => <p>{t}</p>)
+    const splitNewLines = (text) => text.split('\n').map((t, idx) => <p key={idx}>{t}</p>)
 
     const sizeStyle = props.small ? Styles.PanelSmall : Styles.PanelLarge
 
@@ -17,7 +17,7 @@ const Panel = forwardRef((props, ref) => {
         <div className={[Styles.Panel, sizeStyle].join(' ')} style={style}>
             <div className={Styles.Header}>
                 <h3>{props.data.titleBig}</h3>
-                <p>{splitNewLines(props.data.titleSmall)}</p> 
+                {splitNewLines(props.data.titleSmall)}
             </div>
         </div>
     );

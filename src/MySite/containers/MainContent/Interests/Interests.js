@@ -4,12 +4,12 @@ import Panel from '../../../components/Panel/Panel';
 
 const Interests = forwardRef((props, ref) => {
     
-    let interestsItemsJsx = props.data.map(interestsItem => {
+    let interestsItemsJsx = props.data.map((interestsItem, idx) => {
       let panelData = {
         titleBig: interestsItem.interest,
         imageUrl: interestsItem.imageUrl
       }
-      return <Panel data={panelData} small={true}/>
+      return <Panel key={idx} data={panelData} small={true}/>
     })
 
     return (

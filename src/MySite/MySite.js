@@ -6,7 +6,7 @@ import MainContent from './containers/MainContent/MainContent';
 import SideDrawer from './containers/SideDrawer/SideDrawer';
 
 const MySite = () => {
-  const [data, setData] = useState({aboutMe: {}, employment: [], education: [], interests: []})
+  const [data, setData] = useState({aboutMe: {}, employment: [], education: [], interests: [], skills: {levels: []}})
   const [isSideDrawerOpen, setIsSideDrawerOpen] = useState(false)
   const [currentSection, setCurrentSection] = useState("")
 
@@ -42,7 +42,6 @@ const MySite = () => {
       
       <MainContent className={Styles.MainContent} data={data} currentSection={currentSection} scroll={() => {
         setCurrentSection("")
-        console.log('scrolling')
       }}/>
     </div>
   );

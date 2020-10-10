@@ -3,13 +3,13 @@ import Panel from '../../../components/Panel/Panel'
 
 
 const Education = forwardRef((props, ref) => {
-    const educationItems = props.data.map(educationItem => {
+    const educationItems = props.data.map((educationItem, idx) => {
         let panelData = {
           imageUrl: educationItem.imageUrl,
           titleBig: educationItem.institution,
           titleSmall: `${educationItem.degree} \n ${educationItem.startDate} - ${educationItem.endDate}`
         }
-        return <Panel data={panelData}/>
+        return <Panel key={idx} data={panelData}/>
     })
     
     return (

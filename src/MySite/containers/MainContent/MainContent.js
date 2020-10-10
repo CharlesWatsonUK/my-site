@@ -3,17 +3,20 @@ import Styles from './MainContent.module.css';
 import AboutMe from './AboutMe/AboutMe';
 import Employment from './Employment/Employment';
 import Education from './Education/Education';
-import Interests from './Interests/Interests';
+import Skills from './Skills/Skills';
 
 const MainContent = (props) => {
   
-  const scrollSettings = {behavior: "smooth", block: "nearest", inline: "start"}
-
   const aboutMeRef = useRef(null);
   const employmentRef = useRef(null);
   const educationRef = useRef(null);
   const skillsRef = useRef(null);
-  const interestsRef = useRef(null);
+
+  const getScrollSettings = (sectionTop) => ({
+    top: (sectionTop - aboutMeRef.current.offsetTop),
+    behavior: "smooth",
+    block: "nearest",
+    inline: "start"})
 
   switch(props.currentSection){
     case "aboutMe":
@@ -21,15 +24,15 @@ const MainContent = (props) => {
       break;
     
     case "employment":
-      aboutMeRef.current.scrollTo({top: (employmentRef.current.offsetTop - aboutMeRef.current.offsetTop), behavior: "smooth", block: "nearest"})
+      aboutMeRef.current.scrollTo(getScrollSettings(employmentRef.current.offsetTop))
       break;
 
     case "education":
-      aboutMeRef.current.scrollTo({top: (educationRef.current.offsetTop - aboutMeRef.current.offsetTop), behavior: "smooth", block: "nearest"})
+      aboutMeRef.current.scrollTo(getScrollSettings(educationRef.current.offsetTop))
       break;
     
-    case "interests":
-      interestsRef.current.scrollIntoView(scrollSettings)
+    case "skills":
+      skillsRef.current.scrollIntoView(getScrollSettings(skillsRef.current.offsetTop))
       break;
     
     default:
@@ -41,7 +44,7 @@ const MainContent = (props) => {
       <AboutMe data={props.data.aboutMe}/>
       <Employment ref={employmentRef} data={props.data.employment}/>
       <Education ref={educationRef} data={props.data.education}/>
-      {/* <Interests ref={interestsRef} data={props.data.interests}/> */}
+      <Skills ref={skillsRef} data={props.data.skills}/>
     </div>
   );
 }
