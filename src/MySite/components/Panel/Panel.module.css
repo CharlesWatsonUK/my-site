@@ -1,7 +1,5 @@
 .Panel {
     height: 400px;
-    /* width: 90%; */
-    
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -17,8 +15,7 @@
 }
 
 .PanelLarge {
-    width: 90%;
-    margin-left: 5%;
+    width: 100%;
 }
 
 .Image {  
@@ -27,7 +24,7 @@
     z-index: -1;
 }
 
-.Content {
+.Header {
     color: white;
     background-color: black;
     opacity: 0.8;
@@ -83,7 +80,7 @@ h3 {
         height: 200px;
     }
     
-    .Content {
+    .Header {
         font-size: 1em;
     }
 }

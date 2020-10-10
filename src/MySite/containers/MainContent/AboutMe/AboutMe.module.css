@@ -18,6 +18,10 @@
     display: none;
 }
 
+.Bio {
+    margin: auto;
+}
+
 .ShortBio {
     font-size: 1.5em;
     margin-bottom: 10px;

@@ -39,28 +39,9 @@ const MainContent = (props) => {
   return (
     <div className={[Styles.MainContent, props.className].join(' ')} onScroll={props.scroll} ref={aboutMeRef}>
       <AboutMe data={props.data.aboutMe}/>
-      {/* <Employment ref={employmentRef} data={props.data.employment} />
-      <Education ref={educationRef} data={props.data.education} />
-      <Interests ref={interestsRef} data={props.data.interests} /> */}
-
       <Employment ref={employmentRef} data={props.data.employment}/>
       <Education ref={educationRef} data={props.data.education}/>
-      <Interests ref={interestsRef} data={props.data.interests}/>
-
-      <p>
-        lfnjkdsngn
-        fgnadsinglkn
-        wdinldsakn
-        ddivnlkdsvlk
-        dvondsvklml;
-      </p>
-
-      
-
-      
-      {/* <div ref={skillsRef}>Skills</div>
-      <div ref={interestsRef}>Interests</div>
-      <div className={Styles.Footer}></div> */}
+      {/* <Interests ref={interestsRef} data={props.data.interests}/> */}
     </div>
   );
 }

@@ -7,7 +7,7 @@ const Education = forwardRef((props, ref) => {
         let panelData = {
           imageUrl: educationItem.imageUrl,
           titleBig: educationItem.institution,
-          titleSmall: educationItem.degree
+          titleSmall: `${educationItem.degree} \n ${educationItem.startDate} - ${educationItem.endDate}`
         }
         return <Panel data={panelData}/>
     })

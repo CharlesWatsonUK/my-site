@@ -7,7 +7,7 @@ const Employment = forwardRef((props, ref) => {
     let panelData = {
       imageUrl: employmentItem.imageUrl,
       titleBig: employmentItem.employer,
-      titleSmall: employmentItem.title
+      titleSmall: `${employmentItem.startDate} - ${employmentItem.endDate}`
     }
     return <Panel data={panelData}/>
   })
