@@ -7,6 +7,7 @@ const Contact = forwardRef((props, ref) => {
         <div ref={ref} className={Styles.Contact}>
             <h2><i className="fa fa-comments"></i> Contact </h2>
             <p>Please contact me on <a href="https://www.linkedin.com/in/charles-watson/">LinkedIn</a>, there you will also find my recommendations and endorsements.</p>
+            <p>CV provided on request.</p>
         </div>
   );
 })
