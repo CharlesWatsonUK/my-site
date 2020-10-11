@@ -9,14 +9,14 @@
 
 .MenuIcon {
     float: left;
-    width: 10%;
+    width: 15%;
     font-size: 2em;
     color: var(--WhiteColor);
     margin: 0;
 }
 
 .Title {
-    width: 90%;
+    width: 85%;
     display: flex;
     justify-content: space-evenly;
 }
@@ -24,6 +24,12 @@
 @media only screen and (max-width: 500px) {
     .Title {
         font-size: 0.7em;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .MenuIcon {
+       
     }
 }
 

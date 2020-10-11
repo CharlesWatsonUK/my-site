@@ -1,0 +1,14 @@
+.Footer {
+    background-color: var(--BlackColor);
+    color: var(--WhiteColor);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 1400px) {
+    .Footer {
+        margin-bottom: 50px;
+    }
+    
+}

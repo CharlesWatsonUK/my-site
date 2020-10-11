@@ -8,7 +8,7 @@ const Skills = forwardRef((props, ref) => {
   
     return (
     <div ref={ref}>
-      <h2><i className="fa fa-tools"></i> Skills </h2>
+      <h2><i className="fa fa-wrench"></i> Skills </h2>
       <div className={Styles.SkillsContainer}>
         {skillsLevelsJsx}
       </div>

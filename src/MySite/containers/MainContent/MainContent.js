@@ -4,6 +4,7 @@ import AboutMe from './AboutMe/AboutMe';
 import Employment from './Employment/Employment';
 import Education from './Education/Education';
 import Skills from './Skills/Skills';
+import Footer from './Footer/Footer';
 
 const MainContent = (props) => {
   
@@ -12,15 +13,18 @@ const MainContent = (props) => {
   const educationRef = useRef(null);
   const skillsRef = useRef(null);
 
-  const getScrollSettings = (sectionTop) => ({
+  const defaultScrollSettings = {behavior: "smooth", block: "nearest"}
+  
+  const getScrollSettings = (sectionTop) => {
+    console.log(sectionTop +" "+ aboutMeRef.current.offsetTop)
+    return {
     top: (sectionTop - aboutMeRef.current.offsetTop),
-    behavior: "smooth",
-    block: "nearest",
-    inline: "start"})
+    ...defaultScrollSettings}
+  }
 
   switch(props.currentSection){
     case "aboutMe":
-      aboutMeRef.current.scrollTo({top: 0, behavior: "smooth"})
+      aboutMeRef.current.scrollTo(getScrollSettings(aboutMeRef.current.offsetTop))
       break;
     
     case "employment":
@@ -32,7 +36,7 @@ const MainContent = (props) => {
       break;
     
     case "skills":
-      skillsRef.current.scrollIntoView(getScrollSettings(skillsRef.current.offsetTop))
+      aboutMeRef.current.scrollTo(getScrollSettings(skillsRef.current.offsetTop))
       break;
     
     default:
@@ -45,6 +49,7 @@ const MainContent = (props) => {
       <Employment ref={employmentRef} data={props.data.employment}/>
       <Education ref={educationRef} data={props.data.education}/>
       <Skills ref={skillsRef} data={props.data.skills}/>
+      <Footer/>
     </div>
   );
 }

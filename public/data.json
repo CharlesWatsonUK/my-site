@@ -1,7 +1,7 @@
 {
     "aboutMe": {
         "bioShort": "The future of technology is exciting!",
-        "bioLong": "Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        "bioLong": "I'm a motivated and budding engineer who loves to solve problems with software. My industry experience is primarily back-end Java development. I also have some front-end JavaScript and Python Machine Learning experience. "
     },
     "employment": [
         {
@@ -62,32 +62,23 @@
                 "title": "Knowledgeable",
                 "subTitle": "Some industry experience and use in personal projects",
                 "skills": [
-                    "JavaScript",
+                    "JavaScript (Client-Side)",
                     "React",
                     "Angular",
-                    "Python",
+                    "Python (Machine Learning)",
                     "SQL"
                 ]
+            },
+            {
+                "title": "Areas to grow!",
+                "subTitle": "Skills I would like to gain experience in",
+                "skills": [
+                    "JavaScript (Server Side)",
+                    "Functional First Languages",
+                    "DevOps and Infrastructure",
+                    "Big Data"
+                ] 
             }
         ]
-    },
-    "interests": [
-        {
-            "interest": "Guitar",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-            "imageUrl": "./images/guitar.png"
-        },
-        {
-            "iconClass": "fa-golf-ball",
-            "interest": "Golf",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-            "imageUrl": "./images/golf.png"
-        },
-        {
-            "iconClass": "",
-            "interest": "Hiking",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-            "imageUrl": "./images/hiking.png"
-        }
-    ] 
+    }
 }

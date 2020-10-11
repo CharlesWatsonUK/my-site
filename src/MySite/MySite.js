@@ -6,7 +6,7 @@ import MainContent from './containers/MainContent/MainContent';
 import SideDrawer from './containers/SideDrawer/SideDrawer';
 
 const MySite = () => {
-  const [data, setData] = useState({aboutMe: {}, employment: [], education: [], interests: [], skills: {levels: []}})
+  const [data, setData] = useState({aboutMe: {}, employment: [], education: [], skills: {levels: []}})
   const [isSideDrawerOpen, setIsSideDrawerOpen] = useState(false)
   const [currentSection, setCurrentSection] = useState("")
 
